@@ -1,0 +1,174 @@
+
+*{
+    box-sizing: border-box;
+    color: #707070;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Playfair Display', serif;
+}
+
+.app{
+    width: 600px;
+    margin: 100px auto;
+}
+
+.divider{
+    height: 5px;
+    background: #707070;
+    margin-top: 8px;
+}
+
+.output{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.brand-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+
+}
+
+.brand{
+    padding-left: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.result-container{
+    display: flex;
+    align-items: center;
+
+}
+
+.result{
+    font-size: 50px;
+    margin-bottom: 5px;
+    font-family: 'Merriweather', serif;
+}
+
+.calc{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-weight:bolder;
+}
+
+.container{
+    width: 135px;
+}
+
+.input,.from,.to{
+    width: 100%; 
+    border-radius: 5px;
+    border: 1px solid #707070;
+    height: 30px;
+    padding: 4px;
+    font-weight:bolder;
+
+}
+
+.input:focus,.from:focus,.to:focus{
+    outline: none;
+}
+
+.container label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.btn-calc{
+
+    width: 100%;
+    height: 100%;
+    background-color:#2CD1EE;
+    color: #ffffff;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.btn-calc:focus{
+    outline: none;
+}
+.btn-calc:active{
+    background-color: #0e8ea5;
+}
+
+.history{
+    width:100%;
+    margin-top: 20px;
+}
+
+.history th, .history td {
+    padding: 8px;
+    text-align: left;
+    border-radius: 5px;
+   
+}
+
+.history th{
+   background-color:  #2CD1EE;
+   color: #ffffff;
+    padding: 12px 8px;
+}
+
+.history tr{
+    background-color: #f1f1f1;
+}
+
+.history tr:hover{
+    background-color: #adadadb6;
+    /* transition: 0.5s; */
+}
+.history th:last-child{
+    text-align: right;
+}
+
+.history tr td:last-child{
+    text-align: right;
+}
+
+#rowSpacer td{
+    text-align: center;
+}
+
+@media screen and (max-width:480px){
+    .app{
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .output{
+        flex-flow: column;
+        align-items: flex-end;
+    }
+
+    .brand-container{
+        width: 100%;
+    }
+
+    .calc{
+        flex-wrap: wrap;
+    }
+
+    .container{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .from-container,.to-container{
+        width: 46%;
+    }
+
+    .btn-calc{
+        padding: 15px 0;
+    }
+}
